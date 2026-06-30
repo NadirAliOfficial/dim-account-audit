@@ -1,0 +1,16 @@
+{
+  "primary_key": "AccountID",
+  "date_columns": ["OpenDate", "ClosedDate"],
+  "nullable_columns": ["ClosedDate"],
+  "categorical_domains": {
+    "AccountType": ["Checking", "Savings", "Credit"],
+    "Status": ["Open", "Closed"],
+    "RegistrationID": [1, 2, 3]
+  },
+  "outlier_columns": [
+    { "column": "Balance", "group_by": "AccountType" }
+  ],
+  "rare_value_columns": ["AccountType", "Status"],
+  "completeness_warn_pct": 5.0,
+  "completeness_fail_pct": 30.0
+}
