@@ -29,8 +29,10 @@ no-op automatically if the relevant columns aren't present).
 
 ```bash
 pip install -r requirements.txt
-python3 audit.py --input /path/to/file.csv
+python3 audit.py --input data/DimAccount.csv
 ```
+
+A sample dataset is included at `data/DimAccount.csv`.
 
 Optional flags:
 
