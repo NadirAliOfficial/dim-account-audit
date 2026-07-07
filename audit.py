@@ -114,7 +114,7 @@ def main():
 
     if not os.path.exists(args.input):
         print(f"error: input file not found: {args.input}", file=sys.stderr)
-        sys.exit(1)
+        sys.sys.exit(1)
 
     cfg = load_config(args.config)
     df = pd.read_csv(args.input, parse_dates=cfg.get("date_columns", []))
